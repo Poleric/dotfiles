@@ -207,6 +207,11 @@ bindsym $mod+r mode "resize"
 
     bindsym --locked XF86TouchpadToggle input type:touchpad events toggle enabled disabled
 
+    bindsym XF86AudioPlay exec playerctl play-pause
+    bindsym XF86AudioNext exec playerctl next
+    bindsym XF86AudioPrev exec playerctl previous
+    bindsym XF86Search exec $menu
+
     bindsym $mod+Shift+s exec flameshot gui
 
 #
