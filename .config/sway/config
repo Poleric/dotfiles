@@ -16,7 +16,7 @@ set $laptop eDP-1
 set $external HDMI-1
 
 output $laptop pos 0 0 res 1920x1080
-output $external pos 1920 0 res 1920x1080@60Hz
+output $external pos 0 0 res 1920x1080@60Hz
 
 ### Wallpaper configuration
 exec $HOME/.config/sway/set_random_bg.sh
