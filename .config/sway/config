@@ -70,7 +70,7 @@ input type:keyboard {
     bindsym $mod+Shift+c reload
 
     # Exit sway (logs you out of your Wayland session)
-    bindsym $mod+shift+e exec swaynag \
+    bindsym --locked $mod+shift+e exec swaynag \
         -t warning \
         -m 'What do you want to do?' \
         -b 'Logout' 'swaymsg exit' \
