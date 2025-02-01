@@ -18,6 +18,9 @@ set $external HDMI-1
 output $laptop pos 0 0 res 1920x1080
 output $external pos 0 0 res 1920x1080@60Hz
 
+bindswitch --reload --locked lid:on output $laptop disable
+bindswitch --reload --locked lid:off output $laptop enable
+
 ### Wallpaper configuration
 exec $HOME/.config/sway/set_random_bg.sh
 
