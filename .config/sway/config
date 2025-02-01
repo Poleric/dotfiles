@@ -40,11 +40,12 @@ input type:touchpad {
 
 input type:mouse {
     natural_scroll enabled
+    accel_profile "flat"
 }
 
 input type:keyboard {
     xkb_options caps:escape
-    xkb_layout se,vn
+    xkb_layout us
     repeat_rate 100
     repeat_delay 300
 }
