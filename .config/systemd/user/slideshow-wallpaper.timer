@@ -1,0 +1,9 @@
+[Unit]
+Description=Changes to a random wallpaper on a fixed interval
+
+[Timer]
+OnUnitActiveSec=10m
+Unit=slideshow-wallpaper.service
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,9 @@
+[Unit]
+Description=Changes to a random wallpaper
+
+[Service]
+Type=oneshot
+ExecStart=%h/.config/sway/set_random_bg.sh
+
+[Install]
+WantedBy=default.target
