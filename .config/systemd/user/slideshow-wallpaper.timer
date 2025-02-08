@@ -2,6 +2,7 @@
 Description=Changes to a random wallpaper on a fixed interval
 
 [Timer]
+OnBootSec=10s
 OnUnitActiveSec=10m
 Unit=slideshow-wallpaper.service
 

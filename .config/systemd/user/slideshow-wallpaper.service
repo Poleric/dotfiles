@@ -3,7 +3,7 @@ Description=Changes to a random wallpaper
 
 [Service]
 Type=oneshot
-ExecStart=%h/.config/sway/set_random_bg.sh
+ExecStart=/bin/sh -c "feh --bg-fill --randomize $HOME/Pictures/wallpapers/"
 
 [Install]
 WantedBy=default.target
