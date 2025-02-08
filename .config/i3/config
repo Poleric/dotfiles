@@ -208,3 +208,5 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # Start polkit
 exec_always --no-startup-id /usr/bin/lxpolkit
+
+exec_always --no-startup-id otd-daemon
