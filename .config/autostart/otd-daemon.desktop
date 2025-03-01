@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=otd-daemon
+Comment=User mode FOSS tablet driver
+Type=Application
+Exec=/usr/bin/otd-daemon
