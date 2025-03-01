@@ -1,0 +1,6 @@
+xrdb ~/.Xresources
+xrandr --output HDMI-1 --same-as eDP-1
+
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS=@im=fcitx
