@@ -60,7 +60,7 @@
             "enabled": false
         },
         "WebRichPresence (arRPC)": {
-            "enabled": false
+            "enabled": true
         },
         "BANger": {
             "enabled": false
@@ -139,7 +139,10 @@
             "enabled": false
         },
         "Dearrow": {
-            "enabled": false
+            "enabled": true,
+            "hideButton": false,
+            "replaceElements": 1,
+            "dearrowByDefault": true
         },
         "Decor": {
             "enabled": false
@@ -599,6 +602,7 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1738683109899
-    }
+        "settingsSyncVersion": 1740227968380
+    },
+    "eagerPatches": false
 }

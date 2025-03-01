@@ -64,9 +64,10 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
     bindsym $mod+Shift+e exec i3-nagbar \
         -t warning \
         -m 'What do you want to do?' \
-        -B 'Logout' 'i3-msg exit'  \
+        -B 'Poweroff' 'systemctl poweroff' \
         -B 'Reboot' 'systemctl reboot' \
-        -B 'Poweroff' 'systemctl poweroff'
+        -B 'Logout' 'i3-msg exit'  \
+        -B 'Sleep' 'systemctl suspend'
 #
 # Moving around:
 #
@@ -182,8 +183,8 @@ bindsym $mod+r mode "resize"
 # Utilities:
 #
     # Special keys to adjust volume via PulseAudio
-    bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume \@DEFAULT_SINK@ +5%
-    bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume \@DEFAULT_SINK@ -5%
+    bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume \@DEFAULT_SINK@ +2%
+    bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume \@DEFAULT_SINK@ -2%
     bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute \@DEFAULT_SINK@ toggle
     bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute \@DEFAULT_SOURCE@ toggle
 
@@ -192,8 +193,8 @@ bindsym $mod+r mode "resize"
     bindsym XF86AudioPrev exec playerctl previous
 
     # Special keys to adjust brightness via brightnessctl
-    bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
-    bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set 5%+
+    bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 2%-
+    bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set 2%+
 
     bindsym XF86TouchpadToggle exec --no-startup-id $HOME/.config/i3/toggle_touchpad.sh
 
@@ -205,8 +206,3 @@ bindsym $mod+r mode "resize"
 # Status Bar:
 #
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-
-# Start polkit
-exec_always --no-startup-id /usr/bin/lxpolkit
-
-exec_always --no-startup-id otd-daemon
