@@ -2,8 +2,8 @@
 Description=PolicyKit agent for LXDE
 
 [Service]
-Type=forking
+Type=simple
 ExecStart=/usr/bin/lxpolkit
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=default.target

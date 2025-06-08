@@ -2,5 +2,4 @@
 Name=Slideshow Wallpaper
 Comment=Periodically changes wallpaper to an image in a directory
 Type=Application
-Exec=while true; do feh --bg-fill --randomize $HOME/Pictures/wallpapers/ && sleep 10; done
-Terminal=True
+Exec=/bin/sh -c "while true; do feh --bg-fill --randomize $HOME/Pictures/wallpapers/ && sleep 600; done"

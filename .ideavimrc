@@ -37,3 +37,28 @@ augroup focus
   autocmd!
   autocmd FocusLost,BufLeave * silent! wa
 augroup END
+
+sethandler <S-CR> a:ide
+sethandler <S-Left> a:vim
+sethandler <C-Left> a:vim
+sethandler <S-Up> a:vim
+sethandler <C-Up> a:vim
+sethandler <S-Right> a:vim
+sethandler <C-Right> a:vim
+sethandler <S-Down> a:vim
+sethandler <C-A> a:ide
+sethandler <C-B> a:ide
+sethandler <C-C> a:ide
+sethandler <C-D> a:ide
+sethandler <C-F> a:ide
+sethandler <C-G> a:ide
+sethandler <C-L> a:vim
+sethandler <C-Q> a:ide
+sethandler <C-R> a:vim
+sethandler <C-U> a:vim
+sethandler <C-V> a:ide
+sethandler <C-X> a:ide
+sethandler <C-]> a:vim
+sethandler <C-W> a:ide
+sethandler <C-P> a:ide
+

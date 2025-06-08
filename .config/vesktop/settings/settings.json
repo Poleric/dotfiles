@@ -60,7 +60,7 @@
             "enabled": false
         },
         "WebRichPresence (arRPC)": {
-            "enabled": true
+            "enabled": false
         },
         "BANger": {
             "enabled": false
@@ -153,11 +153,9 @@
         "DontRoundMyTimestamps": {
             "enabled": false
         },
-        "EmoteCloner": {
-            "enabled": false
-        },
         "Experiments": {
-            "enabled": false
+            "enabled": true,
+            "toolbarDevMenu": false
         },
         "F8Break": {
             "enabled": false
@@ -179,7 +177,7 @@
             "enabled": false
         },
         "FavoriteEmojiFirst": {
-            "enabled": false
+            "enabled": true
         },
         "FavoriteGifSearch": {
             "enabled": false
@@ -224,17 +222,18 @@
             "enabled": false
         },
         "ImageZoom": {
-            "enabled": false,
+            "enabled": true,
             "saveZoomValues": true,
             "invertScroll": true,
             "nearestNeighbour": false,
             "square": false,
-            "zoom": 3.4000000000000004,
+            "zoom": 3.9999999999999987,
             "size": 700.6161971830986,
             "zoomSpeed": 0.5
         },
         "ImplicitRelationships": {
-            "enabled": false
+            "enabled": false,
+            "sortByAffinity": true
         },
         "InvisibleChat": {
             "enabled": false
@@ -423,7 +422,7 @@
             "replaceMessageContents": true
         },
         "ServerInfo": {
-            "enabled": false
+            "enabled": true
         },
         "ServerListIndicators": {
             "enabled": false
@@ -547,7 +546,7 @@
             "enabled": false
         },
         "WhoReacted": {
-            "enabled": false
+            "enabled": true
         },
         "XSOverlay": {
             "enabled": false
@@ -574,7 +573,7 @@
             "enabled": false
         },
         "DynamicImageModalAPI": {
-            "enabled": false
+            "enabled": true
         },
         "FixImagesQuality": {
             "enabled": false
@@ -590,6 +589,12 @@
         },
         "HideMedia": {
             "enabled": false
+        },
+        "DisableDeepLinks": {
+            "enabled": true
+        },
+        "ExpressionCloner": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -602,7 +607,7 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1740227968380
+        "settingsSyncVersion": 1749211958358
     },
     "eagerPatches": false
 }

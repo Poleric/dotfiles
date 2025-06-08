@@ -4,8 +4,3 @@
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
-
-export PATH=$PATH:$HOME/.local/bin
-
-export VISUAL=nvim
-export EDITOR=nvim
