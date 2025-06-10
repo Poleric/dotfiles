@@ -1,9 +1,0 @@
-[Unit]
-Description=PolicyKit agent for LXDE
-
-[Service]
-Type=simple
-ExecStart=/usr/bin/lxpolkit
-
-[Install]
-WantedBy=default.target

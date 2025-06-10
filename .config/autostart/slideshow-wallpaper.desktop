@@ -1,5 +1,0 @@
-[Desktop Entry]
-Name=Slideshow Wallpaper
-Comment=Periodically changes wallpaper to an image in a directory
-Type=Application
-Exec=/bin/sh -c "while true; do feh --bg-fill --randomize $HOME/Pictures/wallpapers/ && sleep 600; done"
