@@ -6,17 +6,16 @@
     "modules-left": [
         "hyprland/workspaces",
         "hyprland/submap",
-        "custom/media"
-    ],
-    "modules-center": [
         "hyprland/window"
     ],
+    "modules-center": [
+    ],
     "modules-right": [
-        "mpd",
         "idle_inhibitor",
         "hyprland/language",
-        "pulseaudio",
+        "mpd",
         "network",
+        "wireplumber",
         "backlight",
         "battery",
         "clock",
@@ -26,7 +25,7 @@
     ],
     // Modules configuration
     "hyprland/workspaces": {
-         "all-outputs": true,
+         "all-outputs": true
     //     "format": "{name}: {icon}",
     //     "format-icons": {
     //         "1": "",
@@ -43,9 +42,9 @@
         "format": "<span style=\"italic\">{}</span>"
     },
     "mpd": {
-        "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩ {volume}% ",
+        "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon} {artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩ {volume}% ",
         "format-disconnected": "Disconnected ",
-        "format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon}Stopped ",
+        "format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon} Stopped ",
         "unknown-tag": "N/A",
         "interval": 5,
         "consume-icons": {
@@ -87,7 +86,7 @@
     "backlight": {
         // "device": "acpi_video1",
         "format": "{percent}% {icon}",
-        "format-icons": ["", "", "", "", "", "", "", "", ""]
+        "format-icons": ["", ""]
     },
     "battery": {
         "states": {
@@ -113,24 +112,11 @@
         "format-disconnected": "Disconnected ⚠",
         "format-alt": "{ifname}: {ipaddr}/{cidr}"
     },
-    "pulseaudio": {
-        // "scroll-step": 1, // %, can be a float
-        "format": "{volume}% {icon} {format_source}",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": " {format_source}",
-        "format-source": "{volume}% ",
-        "format-source-muted": "",
-        "format-icons": {
-            "headphone": "",
-            "hands-free": "",
-            "headset": "",
-            "phone": "",
-            "portable": "",
-            "car": "",
-            "default": ["", "", ""]
-        },
-        "on-click": "pavucontrol"
+    "wireplumber": {
+        "format": "{volume}% {icon}",
+        "format-muted": "",
+        // "on-click": "helvum",
+        "format-icons": ["", "", ""]
     },
     "gamemode": {
         "format": "{glyph}",
@@ -145,7 +131,7 @@
         "tooltip-format": "Games running: {count}"
     },
     "custom/power": {
-        "format" : "⏻ ",
+        "format" : "⏻",
 		"tooltip": false,
 		"on-click": "wlogout"
     }
