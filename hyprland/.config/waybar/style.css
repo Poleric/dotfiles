@@ -1,8 +1,8 @@
 @import url("reset.css");
 
 * {
-    font-family: Consolas, "Courier New", Courier, monospace;
-    font-size: 13px;
+    font-family: "Jetbrains Mono", Courier, monospace;
+    font-size: 14px;
 }
 
 window#waybar {
@@ -21,7 +21,7 @@ window#waybar.hidden {
 }
 
 .module {
-    padding: 0.2em 1em 0 1em;
+    padding: 0 1em;
     border-radius: 0.3em;
 
     background: @theme_base_color;
@@ -32,9 +32,13 @@ window#waybar.hidden {
     padding: 0;
 }
 
+#window {
+    padding: 0 0.7em;
+}
+
 /* Module specific configurations */
 #workspaces button {
-    padding: 0.2em 0.5em 0 0.5em;
+    padding: 0 0.5em;
     margin: 2px;
 
     border-radius: 0.3em;
