@@ -13,7 +13,6 @@
     "modules-right": [
         "gamemode",
         "idle_inhibitor",
-        "hyprland/language",
         "mpd",
         "network",
         "wireplumber",
