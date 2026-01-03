@@ -114,7 +114,7 @@
     "wireplumber": {
         "format": "{volume}% {icon}",
         "format-muted": "",
-        // "on-click": "helvum",
+        "on-click": "helvum",
         "format-icons": ["", "", ""]
     },
     "gamemode": {
