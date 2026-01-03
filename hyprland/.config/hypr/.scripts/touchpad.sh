@@ -1,7 +1,7 @@
 #!/bin/bash
 
 STATUS_FILE="$XDG_RUNTIME_DIR/touchpad.enable"
-DEVICE_NAME=elan1200:00-04f3:30ef-touchpad
+DEVICE_NAME=elan0678:00-04f3:3195-touchpad
 
 function toggle_touchpad() {
 	if [ -f $STATUS_FILE ]
