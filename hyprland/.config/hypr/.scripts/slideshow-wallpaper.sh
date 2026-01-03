@@ -3,20 +3,16 @@
 WALLPAPER_DIR="$HOME/Pictures/wallpapers"
 
 function change_wallpaper() {
-	CURRENT_WALL=$(hyprctl hyprpaper listloaded)
         MONITORS=$(hyprctl monitors -j | jq -r ".[] | .name") 
 	
         for monitor in $MONITORS; do
-		WALLPAPER=$(find "$WALLPAPER_DIR" -type f ! -name "$(basename "$CURRENT_WALL")" | shuf -n 1)
+		WALLPAPER=$(find "$WALLPAPER_DIR" -type f | shuf -n 1)
 
-		hyprctl hyprpaper reload "$monitor","$WALLPAPER"
+		hyprctl hyprpaper wallpaper "$monitor","$WALLPAPER",cover
 	done
 }
 
-until hyprctl hyprpaper listloaded
-do
-	sleep 1s
-done
+sleep 10s
 
 while true
 do
