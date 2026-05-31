@@ -43,10 +43,10 @@ end)
 -------------------------------
 
 -- See https://wiki.hypr.land/Configuring/Advanced-and-Cool/Environment-variables/
-hl.env("XCURSOR_SIZE", 32)
+hl.env("XCURSOR_SIZE", "32")
 hl.env("XCURSOR_THEME", "XShamikoTheme")
 hl.env("XCURSOR_PATH", "/usr/share/icons:~/.icons:~/.local/share/icons")
-hl.env("HYPRCURSOR_SIZE", 32)
+hl.env("HYPRCURSOR_SIZE", "32")
 hl.env("HYPRCURSOR_THEME", "ShamikoTheme")
 
 -- QT themes
