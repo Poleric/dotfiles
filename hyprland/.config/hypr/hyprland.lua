@@ -9,6 +9,12 @@ hl.monitor({
     position = "auto",
     scale    = 1,
 })
+hl.monitor({
+    output   = "desc:UGD CD120FH 20210617",
+    mode     = "preferred",
+    position = "auto-down",
+    scale    = 1,
+})
 
 
 ---------------------
