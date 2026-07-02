@@ -135,7 +135,7 @@ hl.config({
         -- Please see https://wiki.hypr.land/Configuring/Advanced-and-Cool/Tearing/ before you turn this on
         allow_tearing    = false,
 
-        layout           = "dwindle",
+        layout           = "scrolling",
     },
 
     decoration = {
@@ -262,6 +262,10 @@ for i = 1, 10 do
     hl.bind(mainMod .. " + " .. key, hl.dsp.focus({ workspace = i }))
     hl.bind(mainMod .. " + SHIFT + " .. key, hl.dsp.window.move({ workspace = i }))
 end
+
+hl.bind(mainMod .. " + SHIFT + period", hl.dsp.layout("move +col"))
+hl.bind(mainMod .. " + SHIFT + comma", hl.dsp.layout("move -col"))
+hl.bind(mainMod .. " + comma", hl.dsp.layout("swapcol l"))
 
 -- Example special workspace (scratchpad)
 hl.bind(mainMod .. " + minus", hl.dsp.workspace.toggle_special("magic"))
