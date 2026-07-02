@@ -1,0 +1,14 @@
+export XDG_MENU_PREFIX=arch-
+
+export QT_QPA_PLATFORMTHEME=qt6ct
+
+export QT_IM_MODULE=fcitx
+export QT_IM_MODULES=wayland;fcitx
+export XMODIFIERS=@im=fcitx
+
+export XCURSOR_PATH=/usr/share/icons:~/.icons:~/.local/share/icons
+export XCURSOR_THEME=XShamikoTheme
+export XCURSOR_SIZE=32
+
+gsettings set org.gnome.desktop.interface color-scheme prefer-dark
+gsettings set org.gnome.desktop.interface gtk-theme adw-gtk3-dark

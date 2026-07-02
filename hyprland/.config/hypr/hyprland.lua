@@ -57,26 +57,6 @@ end)
 -------------------------------
 
 -- See https://wiki.hypr.land/Configuring/Advanced-and-Cool/Environment-variables/
-hl.env("XCURSOR_SIZE", "32")
-hl.env("XCURSOR_THEME", "XShamikoTheme")
-hl.env("XCURSOR_PATH", "/usr/share/icons:~/.icons:~/.local/share/icons")
-hl.env("HYPRCURSOR_SIZE", "32")
-hl.env("HYPRCURSOR_THEME", "ShamikoTheme")
-
--- QT themes
-hl.env("QT_QPA_PLATFORMTHEME", "qt6ct")
-
--- fcitx5
-hl.env("XMODIFIERS", "@im=fcitx")
-hl.env("QT_IM_MODULE", "fcitx")
-hl.env("QT_IM_MODULES", "wayland;fcitx")
-
-
-hl.on("config.reloaded", function()
-    hl.exec_cmd("gsettings set org.gnome.desktop.interface color-scheme prefer-dark")
-    hl.exec_cmd("gsettings set org.gnome.desktop.interface gtk-theme adw-gtk3-dark")
-end)
-
 
 -----------------------
 ----- PERMISSIONS -----
