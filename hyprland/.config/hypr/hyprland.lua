@@ -37,6 +37,14 @@ hl.on("hyprland.start", function()
     hl.exec_cmd("~/.config/hypr/.scripts/touchpad.sh init")
 end)
 
+hl.on("monitor.added", function ()
+    hl.exec_cmd("systemctl --user restart opentabletdriver")
+end)
+
+hl.on("monitor.removed", function ()
+    hl.exec_cmd("systemctl --user restart opentabletdriver")
+end)
+
 
 -------------------------------
 ---- ENVIRONMENT VARIABLES ----
